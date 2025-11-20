@@ -1,38 +1,103 @@
 .modalflex {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 50vh;
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: none;
+    gap: 4px;
 }
 
 .text {
-    font-family: sans-serif;
-    margin-bottom: 2vh;
+    font-family: inherit;
+    margin-bottom: 0;
     align-self: center;
+    color: #1F2937;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+}
+
+.text:first-of-type {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111827;
 }
 
 .close {
     align-self: flex-end;
-    background: 0px;
-    border: 0px;
-    font-size: 4vh;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
     margin-bottom: auto;
+    color: #6B7280;
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.3s ease;
+    margin-top: -32px;
+    margin-right: -8px;
+}
+
+.close:hover {
+    color: #1F2937;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.divider {
+    font-size: 0.875rem;
+    color: #9CA3AF;
+    margin: 8px 0;
 }
 
 .again {
-    background-color: skyblue;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
+    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+    color: #FFFFFF;
+    width: 140px;
+    height: 48px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.again:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .menu {
-    background-color: lightcoral;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
+    background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+    color: #FFFFFF;
+    width: 140px;
+    height: 48px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.menu:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 114, 128, 0.4);
 }

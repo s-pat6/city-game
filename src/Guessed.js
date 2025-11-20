@@ -1,20 +1,20 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './Guessed.css'
 
-const green = { 
-    color: 'green'
+const green = {
+    color: '#10B981'
 }
 const red = {
-  color: 'red'
+  color: '#EF4444'
 }
 const gold = {
-  color: 'gold'
+  color: '#F59E0B'
 }
 const black = {
-  color: 'black'
+  color: '#9CA3AF'
 }
 const blue = {
-  color: 'blue'
+  color: '#3B82F6'
 }
 
 export default function Guessed({allCities, cur, mode, minDist}) {

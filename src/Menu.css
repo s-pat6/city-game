@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #0F1419 0%, #1A1F2B 100%);
 }
 
 .flex {
@@ -11,39 +12,90 @@
 }
 
 .title {
-    font-size: 10vh;
-    margin-bottom: auto;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    color: #F3F4F6;
+    letter-spacing: -2px;
 }
 
 .easy {
-    background-color: greenyellow;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    width: 240px;
+    height: 56px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    margin: 12px;
+}
+
+.easy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
 }
 
 .medium {
-    background-color: yellow;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    width: 240px;
+    height: 56px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    margin: 12px;
+}
+
+.medium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
 }
 
 .hard {
-    background-color: orangered;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    width: 240px;
+    height: 56px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+    margin: 12px;
+}
+
+.hard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
 }
 
 .howto {
-    background-color: lightblue;
-    width: 20vw;
-    height: 6vh;
-    font-size: 3vh;
-    border: 0px;
-    margin-top: 10vh;
+    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+    width: 240px;
+    height: 56px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    margin-top: 2rem;
+    margin: 12px;
+}
+
+.howto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }

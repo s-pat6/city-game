@@ -7,8 +7,6 @@ const MODAL_STYLES = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: '#FFF',
-    padding: '50px',
     zIndex: 1000
 }
 
@@ -24,11 +22,11 @@ const OVERLAY_STYLES = {
 
 export default function Modal({open, onClose, didWin, city, cur, handlePlayAgain, handleSetMode}) {
     function handleMouseOver(event) {
-        event.target.style.backgroundColor='#aaa'
+        event.target.style.color='#1F2937'
     }
 
     function handleMouseOut (event) {
-        event.target.style.backgroundColor='#fff'
+        event.target.style.color='#6B7280'
     }
 
     if (!open) return null
@@ -41,11 +39,10 @@ export default function Modal({open, onClose, didWin, city, cur, handlePlayAgain
                 <div className='text'>{didWin ? 'Congrats, you won!' : "Better luck next time."}</div>
                 <div className='text'>The correct answer was {cur.name}.</div>
                 {didWin ?<div className='text'>It took you {city[city.length-1].numGuess} guesses to find the correct answer.</div> : <div className='text'>You didn't find the right answer.</div> }
-                <div>
+                <div className='button-group'>
                     <button className='again' onClick={handlePlayAgain}>Play Again</button>
+                    <button className='menu' onClick={handleSetMode}>Try Another Mode</button>
                 </div>
-                <div className='text'>or...</div>
-                <div><button className='menu' onClick={handleSetMode}>Try Another Mode</button></div>
             </div>
         </>,
         document.getElementById('portal')
